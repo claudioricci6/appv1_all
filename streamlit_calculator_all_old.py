@@ -14,8 +14,7 @@ def main():
 
     # Load the joblib file
     try:
-
-        model_data = joblib.load('/Users/claudio.ricci/Desktop/ML_Chat_GPT/app/appv1/top5_all_model.joblib')
+        model_data = joblib.load('models/top5_all_model.joblib')  # Percorso corretto per Streamlit Cloud
         model = model_data['model']
         scaler = model_data['scaler']
         feature_labels = ['Wirsung size (mm)', 'e_GLDM_SDLGLE', 'wHHL_GLSZM_HGLZE', 'o_FO_RMAD', 'PDAC (Yes)']
